@@ -2,10 +2,10 @@
 source 'https://rubygems.org'
 
 # Lock the ruby version for now. We don't work on Ruby 2.7, so stick with Ruby 2.6
-ruby '~> 2.6.0'
+ruby '~> 3.0.2'
 
 gem 'rails', '~> 4.2'
-gem 'nokogiri', '~> 1.13', '>= 1.13.10' #pin while on ruby < 2.7
+gem 'nokogiri', '~> 1.16', '>= 1.13.10' #pin while on ruby < 2.7
 
 # Get the absolute path of this Gemfile so the includes below still work
 # when the current directory for a bundler command isn't the application's
@@ -96,3 +96,10 @@ gem 'font-awesome-sass'
 
 # Web console
 gem 'web-console', '~> 2.0', group: :development
+gem 'faraday', '~> 0.9'
+gem 'googleauth', '~> 0.5'
+
+#gem 'google-api-client', '0.10.3'
+
+
+gem 'bigdecimal', '~> 1.4'
